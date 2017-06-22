@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>金飞凌官网 KingFeelling</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="description" content="KingFeelling 金飞凌官网">
+	    <meta name="keywords" content="金飞凌官网">
+	    <link rel="icon" href="/static/img/favicon.png">
+		<link rel="stylesheet" href="/components/mui/mui.min.css">
+		<link rel="stylesheet" href="/components/hover/hover-min.css">
+		<link rel="stylesheet" href="/static/css/public.css">
+		<style>
+			div.canvas-gui{
+				width:100%;
+				height:100%;
+				background-color: rgba(3, 89, 149, 1);
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img{height:100%;}
+			div.item-content{
+				padding:30px;
+				text-align: center;
+			}
+			div.item-content i{font-size:16px;}
+		</style>
+	</head>
+
+	<body>
+
+		<!-- 引用头部组件 -->
+		<link rel="import" href="/widget/header.html?__inline">
+
+		<!-- 内容详情 -->
+		<div class="mui-content">
+
+			<!-- 滚动图片 -->
+			<div id="slider" class="mui-slider" >
+				<div class="mui-slider-group mui-slider-loop">
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<img src="/static/img/banner3.jpg" ondragstart="return false;"/>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<div id="canvasView" class="canvas-gui particles-js-canvas-el"></div>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<img src="/static/img/banner2.jpg" ondragstart="return false;"/>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<img src="/static/img/banner3.jpg" ondragstart="return false;"/>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<div id="canvasView" class="canvas-gui particles-js-canvas-el"></div>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+
+			<!-- 公司产品展示（配合产品图片+产品标题+鼠标浮动展示产品内容详情描述） -->
+			<div class="item-content">
+				<h2>产品服务</h2>
+				<p><i class="kfl i-product"></i> Product Service</p>
+				<div class="product">
+
+				</div>
+			</div>
+
+			<!-- 主营业务 -->
+			<div class="item-content">
+				<h2>主营业务</h2>
+				<p><i class="kfl i-business"></i> Primary Business</p>
+				<div class="business">
+
+				</div>
+			</div>
+
+			<!-- 合作客户或企业图标+企业名+数量展示 -->
+			<div class="item-content">
+				<h2>合作商户</h2>
+				<p><i class="kfl i-customer"></i> Customer Case</p>
+				<div class="customer">
+
+				</div>
+			</div>
+
+			<!-- 引用底部组件 -->
+			<link rel="import" href="/widget/footer.html?__inline">
+		</div>
+
+		<!-- js框架进入和内部js -->
+		<script type="text/javascript" src="/components/jquery/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
+		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
+		<script type="text/javascript">
+
+				/*加载执行*/
+	            $(function() {
+
+	            	//设置自动滚动banner
+	            	mui("#slider").slider({interval: 15000});
+
+	            	//canvas动态背景绘画
+	                particlesJS("canvasView", {
+	                    "particles": {
+	                        "number": {
+	                            "value": 50,
+	                            "density": {
+	                                "enable": true,
+	                                "value_area": 800
+	                            }
+	                        },
+	                        "color": {
+	                            "value": "#fff"
+	                        },
+	                        "shape": {
+	                            "type": "circle",
+	                            "stroke": {
+	                                "width": 0,
+	                                "color": "#000000"
+	                            },
+	                            "polygon": {
+	                                "nb_sides": 7
+	                            },
+	                            "image": {
+	                                "src": "img/github.svg",
+	                                "width": 100,
+	                                "height": 100
+	                            }
+	                        },
+	                        "opacity": {
+	                            "value": 0.5,
+	                            "random": false,
+	                            "anim": {
+	                                "enable": false,
+	                                "speed": 1,
+	                                "opacity_min": 0.5,
+	                                "sync": false
+	                            }
+	                        },
+	                        "size": {
+	                            "value": 4,
+	                            "random": true,
+	                            "anim": {
+	                                "enable": false,
+	                                "speed": 40,
+	                                "size_min": 4,
+	                                "sync": false
+	                            }
+	                        },
+	                        "line_linked": {
+	                            "enable": true,
+	                            "distance": 150,
+	                            "color": "#65aae2",
+	                            "opacity": 0.4,
+	                            "width": 2
+	                        },
+	                        "move": {
+	                            "enable": true,
+	                            "speed": 3,
+	                            "direction": "none",
+	                            "random": true,
+	                            "straight": false,
+	                            "out_mode": "out",
+	                            "bounce": false,
+	                            "attract": {
+	                                "enable": false,
+	                                "rotateX": 600,
+	                                "rotateY": 1200
+	                            }
+	                        }
+	                    },
+	                    "interactivity": {
+	                        "events": {
+	                            "onhover": {
+	                                "enable": false
+	                            },
+	                            "onclick": {
+	                                "enable": false
+	                            }
+	                        }
+	                    },
+	                    "retina_detect": true
+	                });
+
+	            });
+
+	        
+		</script>
+	</body>
+</html>
