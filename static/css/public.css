@@ -52,7 +52,7 @@
 }
 
 /*头部公共样式*/
-ul,li,ol,dl,dd{list-style-type: none;}
+ul,li,ol,dl,dd{list-style-type: none;padding:0;}
 .mui-bar{
     height: 70px;
     padding: 0 40px;
@@ -94,6 +94,10 @@ ul.menu > li.site-menu > a:hover{color:#000;}
 .hvr-underline-from-right{transition-duration:300ms;}
 .hvr-bounce-to-right:before{border-radius: 30px;}
 .mui-active >ul.menu > li.site-menu > a{color:#000;}
+
+/*内容部分公共样式*/
+div.mui-content{overflow: hidden;background: #FFF;}
+
 /*底部样式*/
 div.footer{
 	background:#16212A;

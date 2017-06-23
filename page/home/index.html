@@ -10,6 +10,7 @@
 	    <link rel="icon" href="/static/img/favicon.png">
 		<link rel="stylesheet" href="/components/mui/mui.min.css">
 		<link rel="stylesheet" href="/components/hover/hover-min.css">
+		<link rel="stylesheet" href="/components/animate/animate.min.css">
 		<link rel="stylesheet" href="/static/css/public.css">
 		<style>
 			div.canvas-gui{
@@ -18,11 +19,124 @@
 				background-color: rgba(3, 89, 149, 1);
 			}
 			.mui-slider .mui-slider-group .mui-slider-item img{height:100%;}
+			
 			div.item-content{
-				padding:30px;
+				padding:30px 50px;
 				text-align: center;
+				width: 100%;
+				float:left;
+				background: #FFF;
+				border-bottom:5px solid #efeff4;
 			}
 			div.item-content i{font-size:16px;}
+			div.mui-slider{margin-bottom:50px;}
+
+			/*主营业务区域样式*/
+			div.business{
+				padding:20px;
+				width: 100%;
+				display: inline-block;
+				max-width: 1000px;
+			}
+			div.business li.business-info{
+				width:25%;
+				float:left;
+				height:237px;
+				min-width: 200px;
+				padding:10px;
+			}
+			div.business li.business-info >div.contents {
+				width:100%;
+				height:100%;
+				max-width: 240px;
+				margin:auto;
+				position: relative;
+			}
+			div.business li.business-info >div.contents >label.fudong{
+				display:block;
+				position: absolute;
+				bottom: 0;
+				left:0;
+				height:217px;
+				padding:10px;
+				width:100%;
+				overflow: hidden;
+
+				-moz-transition:all 500ms;
+				-webkit-transition:all 500ms;
+				-o-transition:all 500ms;
+			}
+			div.business li.business-info >div.contents >label.fudong >a{
+				display:block;
+			}
+			div.business li.business-info >div.contents h3{font-size:18px;color:#2e73b9;}
+			div.business li.business-info >div.contents h4{font-size:12px;color:gray;}
+			div.business li.business-info >div.contents h5{display: none;}
+			div.business li.business-info >div.contents >label.fudong:hover{
+				background:rgba(5,105,50,0.5);
+				height:300px !important;
+				border: 0;
+			}
+			div.business li.business-info >div.contents >label.fudong:hover h3{color:#FFF;}
+			div.business li.business-info >div.contents >label.fudong:hover h4{color: #184763}
+			div.business li.business-info >div.contents >label.fudong:hover h5{margin-top:15px;color:#efe0b6;text-align:left;display: block;font:13px/16px serif;}
+			@media(max-width: 950px){
+				div.business li.business-info{
+					width:50%;
+				}
+			}
+			@media(max-width:510px){
+				div.business li.business-info{
+					width:100%;
+				}
+				div.business li.business-info >div.contents >label.fudong:hover > h5{font:15px/16px "microsoft yahei";}
+				div.item-content{padding:30px;}
+			}
+			div.business li.business-info img{
+				width:100%;
+				max-width: 150px;
+			}
+
+			/*产品展示*/
+			div.product{
+				width: 100%;
+				display: inline-block;
+				padding:20px 10px;
+				background: url("/static/img/backgroundimg.jpg") no-repeat scroll 0 0/100% 100%;
+			}
+			div.product > ul{display: inline-block;max-width: 1200px;}
+			li.goods{
+				width:25%;
+				float:left;
+				padding:20px;
+			}
+			div.goods-info{
+				width:100%;
+				height:300px;
+				background:#FFF;
+			}
+
+			/*合作商户区域样式*/
+			div.customer{
+				width:100%;
+				display: inline-block;
+				max-width: 1000px;
+				padding:20px 10px;
+			}
+			div.customer li.company-icon{
+				width: 20%;
+				float:left;
+				margin-bottom: 20px;
+			}
+			@media(max-width: 510px){
+				div.customer li.company-icon{
+					width:33.333%;
+					width:calc(100%/3);
+				}
+			}
+			div.customer li.company-icon img{width:60px;height:60px;border-radius: 50px;overflow: hidden;border:1px solid #dfdfdf;}
+
+			.hvr-float-shadow:active, .hvr-float-shadow:focus, .hvr-float-shadow:hover{-webkit-transform: translateY(-15px);transform: translateY(-15px);}
 		</style>
 	</head>
 
@@ -64,30 +178,131 @@
 				</div>
 			</div>
 
-			<!-- 公司产品展示（配合产品图片+产品标题+鼠标浮动展示产品内容详情描述） -->
+			<!-- 主营业务 -->
 			<div class="item-content">
-				<h2>产品服务</h2>
-				<p><i class="kfl i-product"></i> Product Service</p>
-				<div class="product">
-
+				<h2 class="anm fadeInLeft">主营业务</h2>
+				<p class="anm fadeInUp"><i class="kfl i-business"></i> Primary Business</p>
+				<div class="business">
+					<ul>
+						<li class="business-info">
+							<div class="contents">
+								<label class="fudong">
+									<a href="##">
+										<img class="anm flipInX" src="/static/img/yewu1.png"/>
+										<h3>信息管理系统</h3>
+										<h4>TRS Hybase</h4>
+										<h5 class="animated fadeInUp">基于弹性扩展架构的海量数据存储和检索系统，实现大数据存储、管理和检索的高度一体化。</h5>
+									</a>
+								</label>
+							</div>
+						</li>
+						<li class="business-info">
+							<div class="contents">
+								<label class="fudong">
+									<a href="##">
+										<img class="anm flipInX" data-wow-delay="0.2s" src="/static/img/yewu2.png"/>
+										<h3>网络安全系统</h3>
+										<h4>TRS Hybase</h4>
+										<h5>基于弹性扩展架构的海量数据存储和检索系统，实现大数据存储、管理和检索的高度一体化。</h5>
+									</a>
+								</label>
+							</div>
+						</li>
+						<li class="business-info">
+							<div class="contents">
+								<label class="fudong">
+									<a href="##">
+										<img class="anm flipInX" data-wow-delay="0.4s" src="/static/img/yewu3.png"/>
+										<h3>大数据挖掘</h3>
+										<h4>TRS Hybase</h4>
+										<h5>基于弹性扩展架构的海量数据存储和检索系统，实现大数据存储、管理和检索的高度一体化。</h5>
+									</a>
+								</label>
+							</div>
+						</li>
+						<li class="business-info">
+							<div class="contents">
+								<label class="fudong">
+									<a href="##">
+										<img class="anm flipInX" data-wow-delay="0.6s" src="/static/img/yewu4.png"/>
+										<h3>移动互联网科技</h3>
+										<h4>TRS Hybase</h4>
+										<h5>基于弹性扩展架构的海量数据存储和检索系统，实现大数据存储、管理和检索的高度一体化。</h5>
+									</a>
+								</label>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 
-			<!-- 主营业务 -->
-			<div class="item-content">
-				<h2>主营业务</h2>
-				<p><i class="kfl i-business"></i> Primary Business</p>
-				<div class="business">
-
+			<!-- 公司产品展示（配合产品图片+产品标题+鼠标浮动展示产品内容详情描述） -->
+			<div class="item-content" style="padding:0;border:0;padding-top:30px;">
+				<h2 class="anm fadeInRight">产品服务</h2>
+				<p class="anm fadeInUp"><i class="kfl i-product"></i> Product Service</p>
+				<div class="product">
+					<ul>
+						<li class="goods">
+							<div class="goods-info">
+								<span>智能化大数据分析平台</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>虚拟定位信息分析系统</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>无线网络环境侦测系统</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>知识工作自动化平台</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>网络反举证测试系统</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>移动互联网整体解决方案</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>大数据电子画像系统</span>
+							</div>
+						</li>
+						<li class="goods">
+							<div class="goods-info">
+								<span>网络安全盒子系统</span>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 
 			<!-- 合作客户或企业图标+企业名+数量展示 -->
 			<div class="item-content">
-				<h2>合作商户</h2>
-				<p><i class="kfl i-customer"></i> Customer Case</p>
+				<h2 class="anm fadeInDown">合作企业</h2>
+				<p class="anm fadeInUp"><i class="kfl i-customer"></i> Customer Case</p>
 				<div class="customer">
-
+					<ul>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/xinlang.png"/></a><h5>新浪传媒</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/guosui.jpg"/></a><h5>国家税务</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/zhengfu.jpg"/></a><h5>政府机构</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/guosui.jpg"/></a><h5>国家税务</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/zhengfu.jpg"/></a><h5>政府机构</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/guosui.jpg"/></a><h5>国家税务</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/zhengfu.jpg"/></a><h5>政府机构</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/guosui.jpg"/></a><h5>国家税务</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/zhengfu.jpg"/></a><h5>政府机构</h5></li>
+						<li class="company-icon"><a class="hvr-float-shadow" href="##"><img src="/static/img/guosui.jpg"/></a><h5>国家税务</h5></li>
+					</ul>
 				</div>
 			</div>
 
@@ -99,16 +314,30 @@
 		<script type="text/javascript" src="/components/jquery/jquery-2.1.0.js"></script>
 		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
 		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
+		<script type="text/javascript" src="/components/wowjs/wow.min.js"></script>
 		<script type="text/javascript">
+
+
+				var _wow = new WOW({		//初始化滚动条动画参数
+					boxClass:"anm",
+					animatedClass:"animated",
+					offset:0,
+					mobile:true,
+					live:true,
+					callback:function(box){
+						
+					},
+					scrollContainer:null
+				});
+
 
 				/*加载执行*/
 	            $(function() {
 
-	            	//设置自动滚动banner
-	            	mui("#slider").slider({interval: 15000});
+	            	_wow.init();									//初始化滚动条动画触发
+	            	mui("#slider").slider({interval: 15000});	//设置自动滚动banner
 
-	            	//canvas动态背景绘画
-	                particlesJS("canvasView", {
+	                particlesJS("canvasView", {					//canvas动态背景绘画
 	                    "particles": {
 	                        "number": {
 	                            "value": 50,
