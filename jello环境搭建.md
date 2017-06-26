@@ -15,6 +15,7 @@
 
     git clone https://github.com/2betop/jello-demo.git
 
+
 > 进入当前目录后发布代码
 
     jello release           //发布项目 ，可跟参数 -d + 路径来发布到指定目录

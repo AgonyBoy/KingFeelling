@@ -8,143 +8,35 @@
 	    <meta name="description" content="KingFeelling 金飞凌官网">
 	    <meta name="keywords" content="金飞凌官网">
 	    <link rel="icon" href="/static/img/favicon.png">
-		<link rel="stylesheet" href="/components/mui/mui.min.css">
-		<link rel="stylesheet" href="/components/hover/hover-min.css">
-		<link rel="stylesheet" href="/components/animate/animate.min.css">
-		<link rel="stylesheet" href="/static/css/public.css">
-		<style>
-			div.canvas-gui{
-				width:100%;
-				height:100%;
-				background-color: rgba(3, 89, 149, 1);
-			}
-			.mui-slider .mui-slider-group .mui-slider-item img{height:100%;}
-			
-			div.item-content{
-				padding:30px 50px;
-				text-align: center;
-				width: 100%;
-				float:left;
-				background: #FFF;
-				border-bottom:5px solid #efeff4;
-			}
-			div.item-content i{font-size:16px;}
-			div.mui-slider{margin-bottom:50px;}
-
-			/*主营业务区域样式*/
-			div.business{
-				padding:20px;
-				width: 100%;
-				display: inline-block;
-				max-width: 1000px;
-			}
-			div.business li.business-info{
-				width:25%;
-				float:left;
-				height:237px;
-				min-width: 200px;
-				padding:10px;
-			}
-			div.business li.business-info >div.contents {
-				width:100%;
-				height:100%;
-				max-width: 240px;
-				margin:auto;
-				position: relative;
-			}
-			div.business li.business-info >div.contents >label.fudong{
-				display:block;
-				position: absolute;
-				bottom: 0;
-				left:0;
-				height:217px;
-				padding:10px;
-				width:100%;
-				overflow: hidden;
-
-				-moz-transition:all 500ms;
-				-webkit-transition:all 500ms;
-				-o-transition:all 500ms;
-			}
-			div.business li.business-info >div.contents >label.fudong >a{
-				display:block;
-			}
-			div.business li.business-info >div.contents h3{font-size:18px;color:#2e73b9;}
-			div.business li.business-info >div.contents h4{font-size:12px;color:gray;}
-			div.business li.business-info >div.contents h5{display: none;}
-			div.business li.business-info >div.contents >label.fudong:hover{
-				background:rgba(5,105,50,0.5);
-				height:300px !important;
-				border: 0;
-			}
-			div.business li.business-info >div.contents >label.fudong:hover h3{color:#FFF;}
-			div.business li.business-info >div.contents >label.fudong:hover h4{color: #184763}
-			div.business li.business-info >div.contents >label.fudong:hover h5{margin-top:15px;color:#efe0b6;text-align:left;display: block;font:13px/16px serif;}
-			@media(max-width: 950px){
-				div.business li.business-info{
-					width:50%;
-				}
-			}
-			@media(max-width:510px){
-				div.business li.business-info{
-					width:100%;
-				}
-				div.business li.business-info >div.contents >label.fudong:hover > h5{font:15px/16px "microsoft yahei";}
-				div.item-content{padding:30px;}
-			}
-			div.business li.business-info img{
-				width:100%;
-				max-width: 150px;
-			}
-
-			/*产品展示*/
-			div.product{
-				width: 100%;
-				display: inline-block;
-				padding:20px 10px;
-				background: url("/static/img/backgroundimg.jpg") no-repeat scroll 0 0/100% 100%;
-			}
-			div.product > ul{display: inline-block;max-width: 1200px;}
-			li.goods{
-				width:25%;
-				float:left;
-				padding:20px;
-			}
-			div.goods-info{
-				width:100%;
-				height:300px;
-				background:#FFF;
-			}
-
-			/*合作商户区域样式*/
-			div.customer{
-				width:100%;
-				display: inline-block;
-				max-width: 1000px;
-				padding:20px 10px;
-			}
-			div.customer li.company-icon{
-				width: 20%;
-				float:left;
-				margin-bottom: 20px;
-			}
-			@media(max-width: 510px){
-				div.customer li.company-icon{
-					width:33.333%;
-					width:calc(100%/3);
-				}
-			}
-			div.customer li.company-icon img{width:60px;height:60px;border-radius: 50px;overflow: hidden;border:1px solid #dfdfdf;}
-
-			.hvr-float-shadow:active, .hvr-float-shadow:focus, .hvr-float-shadow:hover{-webkit-transform: translateY(-15px);transform: translateY(-15px);}
-		</style>
+		<link rel="stylesheet" href="/components/mui/mui.min.css"/>
+		<link rel="stylesheet" href="/components/hover/hover-min.css"/>
+		<link rel="stylesheet" href="/components/animate/animate.min.css"/>
+		<link rel="stylesheet" href="/static/css/public.css"/>
+		<link rel="stylesheet" href="/static/css/index.css"/>
 	</head>
 
 	<body>
 
 		<!-- 引用头部组件 -->
 		<link rel="import" href="/widget/header.html?__inline">
-
+		<nav class="mui-bar mui-bar-tab" style="padding:0;">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon kfl home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon kfl chanp"></span>
+				<span class="mui-tab-label">产品服务</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon kfl jishu"></span>
+				<span class="mui-tab-label">技术支持</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon kfl uswm"></span>
+				<span class="mui-tab-label">关于我们</span>
+			</a>
+		</nav>
 		<!-- 内容详情 -->
 		<div class="mui-content">
 
@@ -155,8 +47,16 @@
 						<img src="/static/img/banner3.jpg" ondragstart="return false;"/>
 					</div>
 					<!-- 第一张 -->
-					<div class="mui-slider-item">
-						<div id="canvasView" class="canvas-gui particles-js-canvas-el"></div>
+					<div class="mui-slider-item mui-active">
+						<div id="canvasView" class="canvas-gui particles-js-canvas-el">
+							<div class="text-tit">
+								<h1 class="animated fadeInLeft">专注于大数据服务</h1>
+								<h4 class="animated fadeInLeft">Focus on big data services</h4><br>
+								<p class="animated fadeInLeft" style="animation-delay:0.4s;">● 千寻智能化大数据分析平台</p>
+								<p class="animated fadeInLeft" style="animation-delay:0.6s;">● 智擎知识工作自动化平台</p>
+								<p class="animated fadeInLeft" style="animation-delay:0.8s;">● 丹青大数据电子画像系统</p>
+							</div>
+						</div>
 					</div>
 					<!-- 第二张 -->
 					<div class="mui-slider-item">
@@ -243,43 +143,75 @@
 				<div class="product">
 					<ul>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info dashuju">
 								<span>智能化大数据分析平台</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>智能化大数据分析平台</font></h4>
+									<p class="animated fadeInUp">该平台可提供多数据源的汇集、智能化的分析、多式样的展现等功能，为数据分析提供了强大的引擎。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info xuni">
 								<span>虚拟定位信息分析系统</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>虚拟定位信息分析系统</font></h4>
+									<p class="animated fadeInUp">采用虚拟定位技术模拟用户的地理位置，进行定制化、智能化分析和处理，达到对特定人群的监测。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info wuxian">
 								<span>无线网络环境侦测系统</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>无线网络环境侦测系统</font></h4>
+									<p class="animated fadeInUp">以智能手机平台为载体，对当前接入的无线网络进行形式多样的环境探测与信息收集。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info work">
 								<span>知识工作自动化平台</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>知识工作自动化平台</font></h4>
+									<p class="animated fadeInUp">客户可基于《智擎》 知识工作自动化平台，来定制符合自身应用需求的知识工作自动化软件。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info fanju">
 								<span>网络反举证测试系统</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>网络反举证测试系统</font></h4>
+									<p class="animated fadeInUp">通过对各大安全厂商APT举证技术的研究，提供安全对抗APT的一系列解决方案。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
-								<span>移动互联网整体解决方案</span>
+							<div class="goods-info yidong">
+								<span>移动互联网解决方案</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>移动互联网解决方案</font></h4>
+									<p class="animated fadeInUp">专注客户移动互联网项目开发，按照互联网迭代方式开发移动互联网整体项目。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info dianzi">
 								<span>大数据电子画像系统</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>大数据电子画像系统</font></h4>
+									<p class="animated fadeInUp">通过自主研发的大数据分析平台，采集、汇总网际空间海量的信息数据，将虚拟的网络用户画像呈现在客户面前。</p>
+								</div>
 							</div>
 						</li>
 						<li class="goods">
-							<div class="goods-info">
+							<div class="goods-info anquan">
 								<span>网络安全盒子系统</span>
+								<div class="context">
+									<h4 class="animated rotateInDownLeft"><font>网络安全盒子系统</font></h4>
+									<p class="animated fadeInUp">利用自主研发的路由选择与安全传输协议，为客户提供安全、可靠的网络通信链路平台。</p>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -315,113 +247,7 @@
 		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
 		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
 		<script type="text/javascript" src="/components/wowjs/wow.min.js"></script>
-		<script type="text/javascript">
-
-
-				var _wow = new WOW({		//初始化滚动条动画参数
-					boxClass:"anm",
-					animatedClass:"animated",
-					offset:0,
-					mobile:true,
-					live:true,
-					callback:function(box){
-						
-					},
-					scrollContainer:null
-				});
-
-
-				/*加载执行*/
-	            $(function() {
-
-	            	_wow.init();									//初始化滚动条动画触发
-	            	mui("#slider").slider({interval: 15000});	//设置自动滚动banner
-
-	                particlesJS("canvasView", {					//canvas动态背景绘画
-	                    "particles": {
-	                        "number": {
-	                            "value": 50,
-	                            "density": {
-	                                "enable": true,
-	                                "value_area": 800
-	                            }
-	                        },
-	                        "color": {
-	                            "value": "#fff"
-	                        },
-	                        "shape": {
-	                            "type": "circle",
-	                            "stroke": {
-	                                "width": 0,
-	                                "color": "#000000"
-	                            },
-	                            "polygon": {
-	                                "nb_sides": 7
-	                            },
-	                            "image": {
-	                                "src": "img/github.svg",
-	                                "width": 100,
-	                                "height": 100
-	                            }
-	                        },
-	                        "opacity": {
-	                            "value": 0.5,
-	                            "random": false,
-	                            "anim": {
-	                                "enable": false,
-	                                "speed": 1,
-	                                "opacity_min": 0.5,
-	                                "sync": false
-	                            }
-	                        },
-	                        "size": {
-	                            "value": 4,
-	                            "random": true,
-	                            "anim": {
-	                                "enable": false,
-	                                "speed": 40,
-	                                "size_min": 4,
-	                                "sync": false
-	                            }
-	                        },
-	                        "line_linked": {
-	                            "enable": true,
-	                            "distance": 150,
-	                            "color": "#65aae2",
-	                            "opacity": 0.4,
-	                            "width": 2
-	                        },
-	                        "move": {
-	                            "enable": true,
-	                            "speed": 3,
-	                            "direction": "none",
-	                            "random": true,
-	                            "straight": false,
-	                            "out_mode": "out",
-	                            "bounce": false,
-	                            "attract": {
-	                                "enable": false,
-	                                "rotateX": 600,
-	                                "rotateY": 1200
-	                            }
-	                        }
-	                    },
-	                    "interactivity": {
-	                        "events": {
-	                            "onhover": {
-	                                "enable": false
-	                            },
-	                            "onclick": {
-	                                "enable": false
-	                            }
-	                        }
-	                    },
-	                    "retina_detect": true
-	                });
-
-	            });
-
-	        
-		</script>
+		<script type="text/javascript" src="/static/js/public.js"></script>
+		<script type="text/javascript" src="/static/js/index.js"></script>
 	</body>
 </html>

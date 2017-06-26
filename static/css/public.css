@@ -30,7 +30,10 @@
 .i-business:before { content: "\e60e";color:#FFA92E;}
 
 .kehu2:before { content: "\e608"; }
-
+.home:before{content:"\e6ee";}
+.jishu:before{content:"\e61a";}
+.uswm:before{content:"\e649";}
+.chanp:before{content:"\e75f";}
 
 
 /*滚动条样式*/
@@ -81,6 +84,13 @@ div.companyLogo{
     display: inline-block;
     background:url("/static/img/logoActive.png") no-repeat scroll 0 50%/100% auto;
 }
+/*@media( max-width: 480px){
+	div.companyLogo{
+		float:none;
+		margin:auto;
+		display: block;
+	}
+}*/
 .mui-active > div.companyLogo{background:url("/static/img/logo.png") no-repeat scroll 0 50%/100% auto; }
 ul.menu{float:right;padding:0;margin:0;}
 ul.menu > li.site-menu{
@@ -90,7 +100,7 @@ ul.menu > li.site-menu{
 	line-height: 70px;
 }
 ul.menu > li.site-menu > a{display: inline;padding:15px 5px;background: transparent;color:#FFF;}
-ul.menu > li.site-menu > a:hover{color:#000;}
+ul.menu > li.site-menu > a:hover{color:#2098D1;}
 .hvr-underline-from-right{transition-duration:300ms;}
 .hvr-bounce-to-right:before{border-radius: 30px;}
 .mui-active >ul.menu > li.site-menu > a{color:#000;}
@@ -132,4 +142,14 @@ div.copy-row{
 	padding:15px;
 	font-size: 12px;
 	background:#111a21;
+}
+
+/*手机导航菜单*/
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{font-size: 16px;}
+.mui-bar-tab .mui-tab-item .mui-icon{top:0;}
+.mui-bar-tab .mui-tab-item{height:70px;}
+nav.mui-bar{display: none;background-color: #1f1f1f;}
+@media(max-width: 480px){
+	nav.mui-bar{display: block;}
+	.mui-slider-indicator{bottom:80px;}
 }
