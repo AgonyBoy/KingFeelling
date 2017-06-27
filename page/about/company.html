@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>金飞凌官网 KingFeelling</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="description" content="KingFeelling 金飞凌官网">
+	    <meta name="keywords" content="金飞凌官网">
+	    <link rel="icon" href="/static/img/favicon.png">
+		<link rel="stylesheet" href="/components/mui/mui.min.css"/>
+		<link rel="stylesheet" href="/components/hover/hover-min.css"/>
+		<link rel="stylesheet" href="/components/animate/animate.min.css"/>
+		<link rel="stylesheet" href="/static/css/public.css"/>
+	</head>
+	<style>
+		div.banner-img > img{
+			width:100%;
+			float:left;
+			min-height: 200px;
+		}
+		div.banner-img{position:relative;float:left; max-height:500px;overflow: hidden;}
+		div.text-content{
+			position:absolute;
+			top:40%;
+			left:10%;
+			color:#393b44;
+		}
+		div.container{
+			width:100%;
+			display: table;
+			max-width: 1290px;
+			margin:auto;
+			padding:50px;
+			border-bottom:1px solid #eee;
+		}
+		div.container p{font-size: 16px;}
+		@media(max-width: 480px){
+			div.text-content{top:30%;}
+			div.container{padding:50px 20px;}
+		}
+		.company-tit{text-align: center;padding:10px 0 30px 0;}
+		span.name{
+			padding:3px 0;
+			color:#000;
+			text-decoration: underline;
+			margin-right:5px;
+		}
+		span.name > img{width:16px;height:16px;margin-right:5px;vertical-align: text-top;}
+		div.heixin{padding:0 20px;margin-top:80px;width:100%;float:left;}
+		li.hx-item{
+			width: 25%;
+			float:left;
+			padding:0 10px;
+			min-width: 200px;
+			text-align: center;
+		}
+		@media(max-width:950px){li.hx-item{width:50%;}}
+		@media(max-width:768px){li.hx-item{width:100%;}}
+		li.hx-item > i{
+			width:100px;
+			height:100px;
+			border-radius: 50%;
+			display:block;
+			line-height: 100px;
+			text-align: center;
+			font-size: 50px;
+			color:#00caee;
+			border:1px solid #00caee;
+			margin:15px auto;
+			transition:all 300ms;
+			-moz-transition:all 300ms;
+			-webkit-transition:all 300ms;
+			-o-transition:all 300ms;
+			margin-top: 0;
+		}
+		li.hx-item:hover >i{color:#FFF;background:#00caee;}
+		div.summary{border:1px solid #eee;border-radius:5px;min-height:120px;padding:10px;text-align: left;max-width: 240px;margin:10px auto;line-height: 16px;}
+		div.summary > p{color:#eee;}
+		li.hx-item:hover > div.summary{border:1px solid #636363;}
+		li.hx-item:hover > div.summary >p{color:#636363;}
+		li.img{width:50%;float:left;padding:5px;}
+		li.img > img{width:100%;}
+
+		div.company-zz{position: relative;width: 100%;height:350px;background:#eee;overflow: hidden;}
+		div.company-zz > ul{position:absolute;white-space: nowrap;}
+		li.zz-img{height:320px;display: inline-block;padding:0 5px;}
+		li.zz-img > img{height:100%;}
+	</style>
+	<body>
+
+		<!-- 引用头部组件 -->
+		<link rel="import" href="/widget/header.html?__inline">
+		<nav class="mui-bar mui-bar-tab" style="padding:0;">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon kfl home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon kfl chanp"></span>
+				<span class="mui-tab-label">产品服务</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon kfl jishu"></span>
+				<span class="mui-tab-label">技术支持</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon kfl uswm"></span>
+				<span class="mui-tab-label">关于我们</span>
+			</a>
+		</nav>
+		<!-- 内容详情 -->
+		<div class="mui-content">
+			<!--顶部banner背景-->
+			<div class="banner-img">
+				<img src="/static/img/about3.jpg"/>
+				<div class="text-content">
+					<h1 class="animated fadeInLeft">大数据分析专家</h1><br>
+					<h4 class="animated fadeInLeft" style="animation-delay:0.2s;">&nbsp;● 精于技术</h4>
+					<h4 class="animated fadeInLeft" style="animation-delay:0.3s;">&nbsp;● 诚于服务</h4>
+				</div>
+			</div>
+
+			<!--公司简介内容-->
+			<div class="container">
+				<h2 class="company-tit"><i class="kfl jianjie"></i>公司简介</h2>
+				<p><span class="name" title="KingFeelling"><img src="/static/img/favicon.png" title="成都金飞凌科技有限公司LOGO" alt="成都金飞凌科技有限公司LOGO"/>成都金飞凌科技有限公司</span>是一家致力于大数据分析挖掘与信息化系统平台开发的高新技术企业，诚挚为广大客户提供大数据资源融合、信息化平台以及网络安全领域的相关产品。公司拥有多支高素质研发团队，并借助成都强大的高校科研实力，在其专注领域积淀了独特的技术优势。</p>
+				<p>公司秉持 <strong>“精于技术”</strong> 的发展理念，通过具有自主知识产权的“智能化大数据挖掘引擎”，为客户提供数据汇集、整合、嵌入、挖掘和应用等大数据服务，帮助客户一站式快速部署大数据存储与应用平台，全面整合客户数据资源，切实降低客户部署、应用大数据的时间和人力成本，让客户尽情挖掘隐藏在各类海量数据背后的潜能和价值；在管理信息化领域，我们能够快速将客户的业务流程进行信息化和过程化改造，为客户提供定制化、智能化的数据、信息、流程整合系统，强力提升客户的工作效率与管理能力，使其成为客户业务工作升级转型的利器；在网络安全领域，我们利用自身独特的技术优势，自主研发了系列网络信息安全产品，并在多个特殊行业完成装备。</p>
+				<p>公司秉持 <strong>“诚于服务”</strong> 的经营理念，从市场调研、需求分析、产品研发、调试联测到售后支持整个流程都强化服务意识，以客户的真实需求为导向，严把质量关，以诚为本，始终将满足客户需求作为衡量我们工作能力的最高要求和标准，在客户群中树立良好的形象与口碑。在这个科技发展日新月异的时代，我们愿与您结伴同行，努力以精湛的技术和诚挚的服务为您提供满意的产品。</p>
+				<div class="heixin">
+					<ul>
+						<li class="hx-item">
+							<i class="kfl rencai"></i>
+							<h4>人才优势</h4>
+							<div class="summary">
+							<p>公司技术总监、研发经理均承担过省部级科研项目，核心开发人员都具备研究生学历，都有十年以上软件开发经验。</p>
+							</div>
+						</li>
+						<li class="hx-item">
+							<i class="kfl jishu"></i>
+							<h4>技术优势</h4>
+							<div class="summary">
+							<p>拥有跨平台全栈开发能力，拥有自由知识产权的大数据处理引擎，拥有成熟的技术管理体系。</p>
+							</div>
+						</li>
+						<li class="hx-item">
+							<i class="kfl ziyuan"></i>
+							<h4>资源优势</h4>
+							<div class="summary">
+							<p>公司与电子科技大学网络安全实验室、成都信息工程大学信息安全学院等知名院校，以及国内知名的高科技公司建立了战略合作关系。</p>
+							</div>
+						</li>
+						<li class="hx-item">
+							<i class="kfl jingyan"></i>
+							<h4>经验优势</h4>
+							<div class="summary">
+								<p>公司承接过大量信息化平台、大数据资源融合以及网络完全等相关领域产品研发与科研项目，针对这些业务拥有成熟的解决方案和丰富的项目实施经验。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="company-tit"><i class="kfl bangong"></i> 办公环境</h2>
+				<div class="show-img">
+					<ul>
+						<li class="img"><img src="/static/img/office-2.jpg"/></li>
+						<li class="img"><img src="/static/img/office-3.jpg"/></li>
+						<li class="img"><img src="/static/img/office-4.jpg"/></li>
+						<li class="img"><img src="/static/img/office-1.jpg"/></li>
+						<li class="img"><img src="/static/img/office-5.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="company-tit"><i class="kfl zizhi"></i> 公司资质</h2>
+				<div class="company-zz">
+					<ul id="listImg">
+						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi1.jpg"/></li>
+						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi2.jpg"/></li>
+						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi3.jpg"/></li>
+						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi3.jpg"/></li>
+						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi1.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- 引用底部组件 -->
+			<link rel="import" href="/widget/footer.html?__inline">
+		</div>
+
+		<!-- js框架进入和内部js -->
+		<script type="text/javascript" src="/components/jquery/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
+		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
+		<script type="text/javascript" src="/components/wowjs/wow.min.js"></script>
+		<script type="text/javascript" src="/static/js/public.js"></script>
+		<script type="text/javascript">
+			
+			$(function(){
+
+				var _width = $("div.company-zz").width();
+			});
+		</script>
+	</body>
+</html>

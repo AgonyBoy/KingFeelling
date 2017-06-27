@@ -34,7 +34,14 @@
 .jishu:before{content:"\e61a";}
 .uswm:before{content:"\e649";}
 .chanp:before{content:"\e75f";}
+.rencai:before{content:"\e610";}
+.jishu:before{content:"\e605";}
+.ziyuan:before{content:"\e704";}
+.jingyan:before{content:"\e600";}
 
+.jianjie:before{content:"\e644";}
+.bangong:before{content:"\e6ce";}
+.zizhi:before{content:"\e606";}
 
 /*滚动条样式*/
 ::-webkit-scrollbar{
@@ -58,7 +65,7 @@
 ul,li,ol,dl,dd{list-style-type: none;padding:0;}
 .mui-bar{
     height: 70px;
-    padding: 0 40px;
+    padding: 0 35px;
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
@@ -100,7 +107,7 @@ ul.menu > li.site-menu{
 	line-height: 70px;
 }
 ul.menu > li.site-menu > a{display: inline;padding:15px 5px;background: transparent;color:#FFF;}
-ul.menu > li.site-menu > a:hover{color:#2098D1;}
+ul.menu > li.site-menu > a:hover{color:#2098D1 !important;}
 .hvr-underline-from-right{transition-duration:300ms;}
 .hvr-bounce-to-right:before{border-radius: 30px;}
 .mui-active >ul.menu > li.site-menu > a{color:#000;}
