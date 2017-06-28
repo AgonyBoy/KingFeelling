@@ -14,7 +14,26 @@
 		<link rel="stylesheet" href="/static/css/public.css"/>
 	</head>
 	<style>
-		div.banner-img{height:480px;}
+		div.banner-img{
+			position: relative;
+			width:100%;
+			float:left;
+			max-height: 500px;
+			overflow: hidden;
+		}
+		div.banner-img > img{
+			width:100%;
+			float:left;
+			min-height: 200px;
+		}
+		div.text-content {
+		    position: absolute;
+		    top: 40%;
+		    left: 10%;
+		    max-width: 560px;
+		    color: #299dcc;
+		}
+		div.text-content .animated{animation-duration: 2s;}
 	</style>
 	<body>
 
@@ -42,7 +61,11 @@
 		<div class="mui-content">
 			<!--顶部banner背景-->
 			<div class="banner-img">
-				
+				<img src="/static/img/data6.jpg"/>
+				<div class="text-content">
+					<h1 class="animated fadeInLeft">千寻大数据分析平台</h1>
+					<p class="animated fadeInUp" style="animation-delay: 0.3s;">面对海量的数据以及各种差异化的数据分析需求，《千寻》提供多数据的汇集、智能化的分析、多式样的展现等功能的一体化平台，为数据分析提供了强大的引擎，是处理大数据的最佳选择。</p>
+				</div>
 			</div>
 
 			<!-- 引用底部组件 -->

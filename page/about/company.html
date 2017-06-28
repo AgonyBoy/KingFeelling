@@ -11,88 +11,15 @@
 		<link rel="stylesheet" href="/components/mui/mui.min.css"/>
 		<link rel="stylesheet" href="/components/hover/hover-min.css"/>
 		<link rel="stylesheet" href="/components/animate/animate.min.css"/>
+		<link rel="stylesheet" href="/static/css/company.css"/>
 		<link rel="stylesheet" href="/static/css/public.css"/>
 	</head>
-	<style>
-		div.banner-img > img{
-			width:100%;
-			float:left;
-			min-height: 200px;
-		}
-		div.banner-img{position:relative;float:left; max-height:500px;overflow: hidden;}
-		div.text-content{
-			position:absolute;
-			top:40%;
-			left:10%;
-			color:#393b44;
-		}
-		div.container{
-			width:100%;
-			display: table;
-			max-width: 1290px;
-			margin:auto;
-			padding:50px;
-			border-bottom:1px solid #eee;
-		}
-		div.container p{font-size: 16px;}
-		@media(max-width: 480px){
-			div.text-content{top:30%;}
-			div.container{padding:50px 20px;}
-		}
-		.company-tit{text-align: center;padding:10px 0 30px 0;}
-		span.name{
-			padding:3px 0;
-			color:#000;
-			text-decoration: underline;
-			margin-right:5px;
-		}
-		span.name > img{width:16px;height:16px;margin-right:5px;vertical-align: text-top;}
-		div.heixin{padding:0 20px;margin-top:80px;width:100%;float:left;}
-		li.hx-item{
-			width: 25%;
-			float:left;
-			padding:0 10px;
-			min-width: 200px;
-			text-align: center;
-		}
-		@media(max-width:950px){li.hx-item{width:50%;}}
-		@media(max-width:768px){li.hx-item{width:100%;}}
-		li.hx-item > i{
-			width:100px;
-			height:100px;
-			border-radius: 50%;
-			display:block;
-			line-height: 100px;
-			text-align: center;
-			font-size: 50px;
-			color:#00caee;
-			border:1px solid #00caee;
-			margin:15px auto;
-			transition:all 300ms;
-			-moz-transition:all 300ms;
-			-webkit-transition:all 300ms;
-			-o-transition:all 300ms;
-			margin-top: 0;
-		}
-		li.hx-item:hover >i{color:#FFF;background:#00caee;}
-		div.summary{border:1px solid #eee;border-radius:5px;min-height:120px;padding:10px;text-align: left;max-width: 240px;margin:10px auto;line-height: 16px;}
-		div.summary > p{color:#eee;}
-		li.hx-item:hover > div.summary{border:1px solid #636363;}
-		li.hx-item:hover > div.summary >p{color:#636363;}
-		li.img{width:50%;float:left;padding:5px;}
-		li.img > img{width:100%;}
-
-		div.company-zz{position: relative;width: 100%;height:350px;background:#eee;overflow: hidden;}
-		div.company-zz > ul{position:absolute;white-space: nowrap;}
-		li.zz-img{height:320px;display: inline-block;padding:0 5px;}
-		li.zz-img > img{height:100%;}
-	</style>
 	<body>
 
 		<!-- 引用头部组件 -->
 		<link rel="import" href="/widget/header.html?__inline">
 		<nav class="mui-bar mui-bar-tab" style="padding:0;">
-			<a class="mui-tab-item mui-active" href="#tabbar">
+			<a class="mui-tab-item mui-active" href="/page/home/index.html">
 				<span class="mui-icon kfl home"></span>
 				<span class="mui-tab-label">首页</span>
 			</a>
@@ -179,29 +106,97 @@
 						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi1.jpg"/></li>
 						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi2.jpg"/></li>
 						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi3.jpg"/></li>
-						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi3.jpg"/></li>
-						<li class="zz-img"><img ondragstart="return false;" src="/static/img/zizhi1.jpg"/></li>
 					</ul>
 				</div>
 			</div>
+			<div class="container">
+				<h2 class="company-tit"><i class="kfl rencai"></i> 人才招聘！</h2>
+				<div class="pepple">
+					<div class="job">
+						我们寻找这样的你，不一定要金光闪闪的履历，但一定要有过硬的本领。眼光要独到，审美要好，最主要的是要有追求极致，与自己死磕的精神！ 公司从事大数据行业，大好的发展趋势，是有所作为的你不可错失的机遇。 <a href="##">请将简历发送至邮箱：xx@xx.com</a>
 
+						<ul>
+							<li class="work"><button class="mui-btn" href="php">资深PHP开发工程师</button></li>
+							<li class="work"><button class="mui-btn" href="cjia">资深C++开发工程师</button></li>
+							<li class="work"><button class="mui-btn" href="java">资深JAVA开发工程师</button></li>
+							<li class="work"><button class="mui-btn" href="more">更多职位</button></li>
+						</ul>
+					</div><hr>
+					<!-- 公司地理位置地图标记 -->
+					<p>联系我们 >> 地图标记</p>
+					<div class="map" id="map"></div>
+				</div>
+			</div>
 
 			<!-- 引用底部组件 -->
 			<link rel="import" href="/widget/footer.html?__inline">
 		</div>
 
+		<!-- 招聘弹出层 -->
+		<div class="dialog" id="dialog">
+			<div class="diacontent">
+				<div class="diashow animated fadeInUp" style="animation-duration: 0.5s;">
+					<div class="diainfo">
+						<ul id="diaContent"></ul>
+					</div>
+					<button onclick="javascript:dialog.style.display='none';">关闭</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- php职位模板信息 -->
+		<script type="text/html" id="php">
+			<li class="diaitem">
+				<h4>资深PHP开发工程师</h4>
+				<hr>
+				<p><strong>岗位职能</strong>: 深入挖掘业务需求，为公司产品提供架构设计;开发和维护产品的开发架构，发现和解决存在的技术问题;核心代码编写，平台公共组件维护</p>
+				<p><strong>任职要求：</strong></p>
+				<p class="diarow">精通PHP语言，熟悉主流PHP开发框架</p>
+				<p class="diarow">熟悉 Linux 平台，熟悉基本的网络协议 TCP/UDP/HTTP/SOCKET</p>
+				<p class="diarow">熟悉 Shell / Python / Go 其中一种或多种语言</p>
+				<p class="diarow">精通MySQL的使用，熟悉分布式数据库的设计与优化，有较好的数据库设计能力</p>
+				<p class="diarow">有MongoDB、Redis、Memcached等缓存数据库开发经验</p>
+				<p class="diarow">数据结构、算法等基础扎实，熟悉面向对象设计</p>
+				<p class="diarow">拥有良好的代码习惯，要求结构清晰，命名规范，逻辑性强</p>
+			</li>
+		</script>
+
+		<!-- C++职位模板信息 -->
+		<script type="text/html" id="cjia">
+			<li class="diaitem">
+				<h4>资深C++开发工程师</h4>
+				<hr>
+				<p><strong>岗位职能</strong>: 负责产品软件开发和维护;能设计功能模块、完成开发，指导测试;良好的问题分析、详细设计、代码调试、故障定位和解决能力;负责编写指定代码模块并进行测试;负责具体功能的实现以及与相关模块的接口集成</p>
+				<p><strong>任职要求：</strong></p>
+
+				<p class="diarow">熟练使用C/C++/MFC,精通面向对象思想,有过SQLSERVER/ORCL数据库开发经历,具备socket，多线程，进程通讯，绘图，界面开发等一定的编程基础</p>
+				<p class="diarow">至少两年以上的windows开发工作经验，具有相应的面向对象设计和分析能力</p>
+				<p class="diarow">熟练使用C++和MFC框架，撑握windows消息，多线程等技术，熟悉STL的使用，精通GDI+者优先</p>
+				<p class="diarow">精通windows上的调试技术，熟练使用各种调试工具如windbg</p>
+				<p class="diarow">熟悉DirectShow、组件（COM/ActiveX）开发者优先</p>
+				<p class="diarow">有较强的沟通能力、团队协作能力和文档编写能力</p>
+			</li>
+		</script>
+		<script type="text/html" id="mapModel">
+			<div class="mapinfo">
+				<span><img src="/static/img/company.png"/></span>
+				<h4>成都金飞凌科技有限公司</h4><hr>
+				<p>地址: 成都市武侯区武青南路40号数码科技广场B座7-1</p>
+			</div>
+		</script>
+		<!-- JAVA职位模板信息 -->
+		<script type="text/html" id="java">
+
+		</script>
 		<!-- js框架进入和内部js -->
 		<script type="text/javascript" src="/components/jquery/jquery-2.1.0.js"></script>
 		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
 		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
 		<script type="text/javascript" src="/components/wowjs/wow.min.js"></script>
 		<script type="text/javascript" src="/static/js/public.js"></script>
-		<script type="text/javascript">
-			
-			$(function(){
-
-				var _width = $("div.company-zz").width();
-			});
-		</script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pyhYLw62EFgyZFtdUF1kh3Uuk13tn0G4"></script>
+		<script type="text/javascript" src="/static/js/company.js"></script>
 	</body>
 </html>
