@@ -1,0 +1,76 @@
+	div.banner-img{
+			position: relative;
+			width:100%;
+			float:left;
+			max-height: 500px;
+			overflow: hidden;
+		}
+		div.banner-img > img{
+			width:100%;
+			float:left;
+			min-height: 240px;
+		}
+		div.text-content {
+		    position: absolute;
+		    top: 40%;
+		    left: 10%;
+		    max-width: 560px;
+		    color: #299dcc;
+		}
+		div.text-content .animated{animation-duration: 2s;}
+		div.text-content p{margin-top: 10px;color:#eee;}
+		div.inline-row{
+			width:100%;
+			float:left;
+			display: block;
+			padding:30px 0;
+			text-align:center;
+		}
+		div.inline-row > h3{border-bottom: 1px solid #dcdcdc;line-height: 60px;position:relative;}
+		div.inline-row > h3:after{content:"";width:140px;height:3px;background:#0088cc;position: absolute;bottom:-2px; left:50%;margin-left:-66px;}
+		div.show-img{
+			width:100%;
+			margin:auto;
+			padding:120px 100px;
+			max-width: 1200px;
+		}
+		div.show-img > img{width:100%;}
+		.qxgn{padding:30px 0;min-height: 480px;background: url("/static/img/qxbg1.jpg") no-repeat scroll 0 0/100% 100%;}
+		div.gntext{max-width: 480px;float:left;text-align: left;margin:30px 20px 0 50px;}
+		div.gntext > h4{color:#0084c3;}
+		div.gntext > p{color:#0d0f61;padding-left:25px;}
+		div.gnimg{float:right;width:100%;max-width: 600px;}
+		div.gnimg > img{width:100%;}
+		div.tese-info{
+			width:100%;
+			float:left;
+			padding:50px 0;
+		}
+		div.tese-info > ul{
+			display: inline-block;
+			margin: 0 auto;
+			max-width: 1280px;
+		}
+		li.tsitem{
+			width:20%;
+			float:left;
+			padding:10px;
+		}
+		@media(max-width: 1200px){
+			li.tsitem{width:50%;}
+			div.tese-info > ul{max-width: 800px;}
+		}
+		div.conter{
+			width:100%;
+			float:left;
+			padding:10px;
+			cursor: default;
+			min-height: 400px;
+			max-height: 430px;
+			border:1px solid #86ccef;
+		}
+		div.conter:hover{background: #86ccef;color:#FFF;border: 0;}
+		div.conter:hover > p{color:#FFF;}
+		div.conter > h1{line-height: 160px;font-size:100px;}
+		div.conter > h4{margin-bottom: 30px;}
+		div.conter > p{text-align: left;line-height: 18px;}
