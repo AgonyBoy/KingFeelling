@@ -57,6 +57,19 @@
 .qianru:before{content:"\e60b";color:#EC8558;}
 .anquan:before{content:"\e611";color:#27B7D6;}
 
+.guzhang:before{content:"\e635";}
+.zhishi:before{content:"\e653";}
+.jiaoyu:before{content:"\e62b";}
+.yiliao:before{content:"\e601";}
+.falv:before{content:"\e6aa";}
+.jinrong:before{content:"\e64b";}
+.hexin:before{content:"\e603";}
+
+.kuozhan:before{content:"\e7f9";}
+.chuli:before{content:"\e6e5";}
+.fywu:before{content:"\e71a";}
+.jiekou:before{content:"\e6b4";}
+
 /*滚动条样式*/
 ::-webkit-scrollbar{
     width: 5px;

@@ -59,8 +59,8 @@ div.banner-img > img{
 			margin-top: 0;
 		}
 		li.hx-item:hover >i{color:#FFF;background:#00caee;}
-		div.summary{border:1px solid #eee;border-radius:5px;min-height:120px;padding:10px;text-align: left;max-width: 240px;margin:10px auto;line-height: 16px;}
-		div.summary > p{color:#eee;}
+		div.summary{border:1px solid #afafaf;border-radius:5px;min-height:120px;padding:10px;text-align: left;max-width: 240px;margin:10px auto;line-height: 16px;}
+		div.summary > p{color:#afafaf;}
 		li.hx-item:hover > div.summary{border:1px solid #636363;}
 		li.hx-item:hover > div.summary >p{color:#636363;}
 		li.img{width:50%;float:left;padding:5px;}

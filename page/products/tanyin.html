@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>金飞凌官网 KingFeelling</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="description" content="KingFeelling 金飞凌官网">
+	    <meta name="keywords" content="金飞凌官网">
+	    <link rel="icon" href="/static/img/favicon.png">
+		<link rel="stylesheet" href="/components/mui/mui.min.css"/>
+		<link rel="stylesheet" href="/components/hover/hover-min.css"/>
+		<link rel="stylesheet" href="/components/animate/animate.min.css"/>
+		<link rel="stylesheet" href="/static/css/public.css"/>
+		<link rel="stylesheet" href="/static/css/goods.css"/>
+
+		<style>
+			div.leftimg{
+				float:left;
+				max-width: 500px;
+				padding:20px;
+				margin-left:180px;
+				margin-top:10px;
+			}
+			div.leftimg > img{width:100%;}
+			div.rightext{
+				float:right;
+				max-width: 400px;
+				text-align: left;
+				padding:20;
+				margin-top:60px;
+				margin-right: 180px;
+			}
+			div.rightext > p{margin-bottom: 20px;}
+			h4{margin-bottom: 10px;color: #0084c3;}
+			.yellow > h4{color:#bfb893 !important;}
+			ul.tese-list{
+				width:100%;
+				max-width: 1200px;
+				padding:100px 10px;
+				display: inline-block;
+				margin: auto;
+			}
+			li.tese-item{
+				float:left;
+				width:25%;
+				padding:10px;
+				text-align: center;
+			}
+			div.tyinfo{width:100%;max-width: 200px;margin: auto;}
+			div.tyinfo > i.kfl{font-size: 80px;line-height: 100px;}
+			@media(max-width: 768px){
+				div.leftimg{margin-left: 0;}
+				div.rightext{margin-right:0;}
+				li.tese-item{width:50%;padding:20px;}
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- 引用头部组件 -->
+		<link rel="import" href="/widget/header.html?__inline">
+		<nav class="mui-bar mui-bar-tab" style="padding:0;">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon kfl home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon kfl chanp"></span>
+				<span class="mui-tab-label">产品服务</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon kfl jishu"></span>
+				<span class="mui-tab-label">技术支持</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon kfl uswm"></span>
+				<span class="mui-tab-label">关于我们</span>
+			</a>
+		</nav>
+		<!-- 内容详情 -->
+		<div class="mui-content">
+			<!--顶部banner背景-->
+			<div class="banner-img">
+				<img src="/static/img/dingwei.jpg" ondragstart="return false;" />
+				<div class="text-content">
+					<h1 class="animated fadeInLeft">隐探虚拟定位信息分析系统</h1>
+					<p class="animated fadeInUp" style="animation-delay: 0.3s;">《隐探》虚拟定位信息分析系统利用各类APP提供的LBS功能，采用虚拟定位技术模拟用户的地理位置，并通过对获取特定时间与特定区域内的用户地理位置信息，进行定制化、智能化分析和处理，达到对特定目标的控守。更好的服务于现实斗争。</p>
+				</div>
+			</div>
+
+			<div class="inline-row">
+			 	<h3><i class="kfl jiag1"></i> 系统架构</h3>
+			 	<div class="show-img">
+			 		<img src="/static/img/yintan.png"/>
+			 	</div>
+			</div>
+
+			<div class="inline-row" style="background: #e6e6e5;">
+				<div class="gntext">
+					<h1 class="anm fadeInLeft">数据采集</h1><br>
+		 			<h4 class="anm fadeInLeft" style="animation-delay: 0.3s;">&nbsp;<i class="kfl checkbox1"></i> 采集指定区域的用户位置信息</h4>
+		 			<h4 class="anm fadeInLeft" style="animation-delay: 0.6s;">&nbsp;<i class="kfl checkbox1"></i> 自定义用户位置信息采集策略</h4>
+				</div>
+				<div class="gnimg anm fadeIn">
+					<img src="/static/img/tyimg1.png"/>
+				</div>
+			</div>
+
+			<div class="inline-row">
+				<div class="leftimg anm fadeIn"><img src="/static/img/tyimg2.png"/></div>
+				<div class="rightext">
+					<h1 class="anm fadeInRight">业务应用</h1><br>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.3s;"><i class="kfl checkbox1"></i>  数据综合查询功能</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.6s;"><i class="kfl checkbox1"></i>  用户轨迹绘制功能</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.9s;"><i class="kfl checkbox1"></i>  用户驻留地分析</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 1.2s;"><i class="kfl checkbox1"></i>  用户关系分析</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 1.5s;"><i class="kfl checkbox1"></i>  特定人员进入监控区域报警</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 1.8s;"><i class="kfl checkbox1"></i>  特定人员离开监控区域报警</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 2.1s;"><i class="kfl checkbox1"></i>  监控区域人流异常报警</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 2.4s;"><i class="kfl checkbox1"></i>  特定异常行为报警</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 2.7s;"><i class="kfl checkbox1"></i>  监控区域特定人员聚集报警</h4>
+				</div>
+			</div>
+
+			<div class="inline-row" style="background: #3b4852;">
+				<div class="gntext yellow">
+					<h1 class="anm fadeInLeft" style="color:#FFF;">数据应用</h1><br>
+		 			<h4 class="anm fadeInLeft" style="animation-delay: 0.3s;"><i class="kfl checkbox1"></i>  获取用户在指定区域的连续停留时长</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 0.6s;"><i class="kfl checkbox1"></i>  获取指定用户的精确地理位置</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 0.9s;"><i class="kfl checkbox1"></i>  获取指定时间范围指定区域的所有用户位置信息</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 1.2s;"><i class="kfl checkbox1"></i>  检查用户在指定时间范围是否在指定区域内</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 1.5s;"><i class="kfl checkbox1"></i>  获取指定时间范围指定区域的用户数量</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 1.8s;"><i class="kfl checkbox1"></i>  获取用户在指定区域的累计停留时长</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 2.1s;"><i class="kfl checkbox1"></i>  获取特定用户在指定时间范围内的移动轨迹</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 2.4s;"><i class="kfl checkbox1"></i>  获取指定时间范围指定区域的用户变化列表</h4>
+				</div>
+				<div class="gnimg anm fadeIn">
+					<img src="/static/img/tyimg3.png"/>
+				</div>
+			</div>
+
+
+			<div class="inline-row">
+			 	<h3><i class="kfl jiag1"></i> 系统特色</h3>
+			 	<ul class="tese-list">
+			 		<li class="tese-item">
+			 			<div class="tyinfo">
+				 			<i class="kfl kuozhan"></i>
+				 			<h4>灵活的扩展性</h4>
+				 			<p>用户通过增加对特定APP的绑定，实现对新业务的支持。</p>
+			 			</div>
+			 		</li>
+			 		<li class="tese-item">
+			 			<div class="tyinfo">
+				 			<i class="kfl chuli"></i>
+				 			<h4>强大的处理能力</h4>
+				 			<p>所有采集获取的数据都能将使用自主研发的大数据存储分析系统进行高效、便捷地处理。</p>
+			 			</div>
+			 		</li>
+			 		<li class="tese-item">
+			 			<div class="tyinfo">
+				 			<i class="kfl fywu"></i>
+				 			<h4>丰富的业务应用</h4>
+				 			<p>具有大量的基础平台功能，方便用户根据实际需求扩展新的应用。</p>
+			 			</div>
+			 		</li>
+			 		<li class="tese-item">
+			 			<div class="tyinfo">
+				 			<i class="kfl jiekou"></i>
+				 			<h4>二次开发接口</h4>
+				 			<p>为用户预留了便捷高效的开发接口，便于进行二次开发。</p>
+			 			</div>
+			 		</li>
+			 	</ul>
+			</div>
+
+			<!-- 引用底部组件 -->
+			<link rel="import" href="/widget/footer.html?__inline">
+		</div>
+
+		<!-- js框架进入和内部js -->
+		<script type="text/javascript" src="/components/jquery/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="/components/canvasanimation/canvasanimation.js"></script>
+		<script type="text/javascript" src="/components/mui/mui.min.js"></script>
+		<script type="text/javascript" src="/components/wowjs/wow.min.js"></script>
+		<script type="text/javascript" src="/static/js/public.js"></script>
+		<script type="text/javascript">
+
+			var _wow = new WOW({		//初始化滚动条动画参数
+				boxClass:"anm",
+				animatedClass:"animated",
+				offset:0,
+				mobile:true,
+				live:true,
+				callback:function(box){
+					
+				},
+				scrollContainer:null
+			});
+
+			$(function(){
+				_wow.init();									//初始化滚动条动画触发
+			});
+		</script>
+	</body>
+</html>
