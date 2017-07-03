@@ -1,0 +1,40 @@
+div.leftimg{
+				float:left;
+				max-width: 500px;
+				padding:20px;
+				margin-left:180px;
+				margin-top:10px;
+			}
+			div.leftimg > img{width:100%;}
+			div.rightext{
+				float:right;
+				max-width: 400px;
+				text-align: left;
+				padding:20;
+				margin-top:60px;
+				margin-right: 180px;
+			}
+			div.rightext > p{margin-bottom: 20px;}
+			div.rightext > h4,div.gntext >h4{line-height: 25px;}
+			h4{margin-bottom: 10px;color: #0084c3;}
+			.yellow > h4{color:#bfb893 !important;}
+			ul.tese-list{
+				width:100%;
+				max-width: 1200px;
+				padding:100px 10px;
+				display: inline-block;
+				margin: auto;
+			}
+			li.tese-item{
+				float:left;
+				width:25%;
+				padding:10px;
+				text-align: center;
+			}
+			div.tyinfo{width:100%;max-width: 200px;margin: auto;}
+			div.tyinfo > i.kfl{font-size: 80px;line-height: 100px;}
+			@media(max-width: 768px){
+				div.leftimg{margin-left: 0;}
+				div.rightext{margin-right:0;}
+				li.tese-item{width:50%;padding:20px;}
+			}

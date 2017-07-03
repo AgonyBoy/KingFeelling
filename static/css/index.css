@@ -6,7 +6,7 @@
 			.mui-slider .mui-slider-group .mui-slider-item img{height:100%;}
 			
 			div.item-content{
-				padding:30px 50px;
+				padding:70px 50px;
 				text-align: center;
 				width: 100%;
 				float:left;
@@ -60,15 +60,15 @@
 			}
 			div.business li.business-info >div.contents h3{font-size:18px;color:#2e73b9;}
 			div.business li.business-info >div.contents h4{font-size:12px;color:gray;}
-			div.business li.business-info >div.contents h5{display: none;}
+			div.business li.business-info >div.contents h5{display: none;margin-top:15px;}
 			div.business li.business-info >div.contents >label.fudong:hover{
-				background:rgba(5,105,50,0.5);
+				background:rgba(61,168,185,0.5);
 				height:300px !important;
 				border: 0;
 			}
 			div.business li.business-info >div.contents >label.fudong:hover h3{color:#FFF;}
 			div.business li.business-info >div.contents >label.fudong:hover h4{color: #184763}
-			div.business li.business-info >div.contents >label.fudong:hover h5{margin-top:15px;color:#efe0b6;text-align:left;display: block;font:13px/16px serif;}
+			div.business li.business-info >div.contents >label.fudong:hover h5{color:#145c88;display: block;}
 			@media(max-width: 950px){
 				div.business li.business-info{
 					width:50%;
@@ -175,6 +175,13 @@
 				}
 				div.goods-info > div.context > h4 > font{font-size: 15px;}
 				div.text-tit{top:100px;padding-left:20px;}
+				div.business li.business-info{height:280px;}
+				div.business li.business-info >div.contents >label.fudong{overflow:initial; }
+				div.business li.business-info >div.contents h5{display: block;}
+				div.business li.business-info >div.contents >label.fudong:hover{background: transparent;height: 217px !important;}
+				div.business li.business-info >div.contents >label.fudong:hover h3{color:#2e73b9;}
+				div.business li.business-info >div.contents >label.fudong:hover h5{color:#8f8f94;text-align: center;}
+
 			}
 			/*合作商户区域样式*/
 			div.customer{
@@ -194,7 +201,7 @@
 					width:calc(100%/3);
 				}
 			}
-			div.customer li.company-icon img{width:60px;height:60px;border-radius: 50px;overflow: hidden;border:1px solid #dfdfdf;}
+			div.customer li.company-icon img{width:60px;height:60px;overflow: hidden;}
 
 			.hvr-float-shadow:active, .hvr-float-shadow:focus, .hvr-float-shadow:hover{-webkit-transform: translateY(-15px);transform: translateY(-15px);}
 
@@ -206,3 +213,5 @@
 			.yidong{background: url(/static/img/yidong.jpg) no-repeat scroll 0 0/100% 100%;}
 			.anquan{background: url(/static/img/anquan.jpg) no-repeat scroll 0 0/100% 100%;}
 			.dianzi{background: url(/static/img/dianzi.jpg) no-repeat scroll 0 0/100% 100%;}
+
+			.yanzheng p,.yanzheng h4,.yanzheng h3{text-align: left;}

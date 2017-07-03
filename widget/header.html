@@ -1,11 +1,12 @@
 <header class="mui-bar mui-bar-transparent">
-	<div class="companyLogo"></div>
+	<div class="companyLogo" title="成都金飞凌科技有限公司（www.kingfeeling.cn）"></div>
 	<ul class="menu">
 		<li class="site-menu">
 			<a href="/page/home/index.html" class="hvr-underline-from-right">网站首页</a>
 			<ul>
 				<li><a href="/page/home/index.html?#zhuying">主营业务</a></li>
 				<li><a href="/page/home/index.html?#goods">产品服务</a></li>
+				<li><a href="/page/home/index.html?#shengming">严正声明</a></li>
 				<li><a href="/page/home/index.html?#qiye">合作企业</a></li>
 			</ul>
 		</li>
@@ -33,3 +34,42 @@
 		</li>
 	</ul>
 </header>
+
+<!-- 手机导航菜单 -->
+<nav class="mui-bar mui-bar-tab" style="padding:0;">
+	<div class="mui-tab-item" href="#tabbar">
+		<span class="mui-icon kfl home"></span>
+		<span class="mui-tab-label">网站首页</span>
+		<ul>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/home/index.html?#zhuying';">主营业务</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/home/index.html?#goods';">产品服务</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/home/index.html?#shengming';">严正声明</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/home/index.html?#qiye';">合作企业</a></li>
+		</ul>
+	</div>
+	<div class="mui-tab-item" href="#tabbar-with-chat">
+		<span class="mui-icon kfl chanp"></span>
+		<span class="mui-tab-label">产品服务</span>
+		<ul>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/products/qianxun.html';">千寻大数据</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/products/zhiqing.html';">智擎平台</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/products/danqing.html';">丹青系统</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/products/tanyin.html';">隐探分析系统</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/products/andun.html';">安盾测试系统</a></li>
+		</ul>
+	</div>
+	<div class="mui-tab-item" href="#tabbar-with-contact">
+		<span class="mui-icon kfl jishu"></span>
+		<span class="mui-tab-label">技术支持</span>
+	</div>
+	<div class="mui-tab-item" href="/page/about/company.html">
+		<span class="mui-icon kfl uswm"></span>
+		<span class="mui-tab-label">关于我们</span>
+		<ul>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/about/company.html?#jianjie';">公司简介</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/about/company.html?#huanjing';">办公环境</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/about/company.html?#zizhi';">公司资质</a></li>
+			<li><a href="##" onclick="$('nav .mui-tab-item').removeClass('mui-active');location.href='/page/about/company.html?#zhaopin';">人才招聘</a></li>
+		</ul>
+	</div>
+</nav>

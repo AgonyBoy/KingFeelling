@@ -13,29 +13,12 @@
 		<link rel="stylesheet" href="/components/animate/animate.min.css"/>
 		<link rel="stylesheet" href="/static/css/public.css"/>
 		<link rel="stylesheet" href="/static/css/goods.css"/>
+		<link rel="stylesheet" href="/static/css/tanyin.css"/>
 	</head>
 	<body>
 
 		<!-- 引用头部组件 -->
 		<link rel="import" href="/widget/header.html?__inline">
-		<nav class="mui-bar mui-bar-tab" style="padding:0;">
-			<a class="mui-tab-item mui-active" href="#tabbar">
-				<span class="mui-icon kfl home"></span>
-				<span class="mui-tab-label">首页</span>
-			</a>
-			<a class="mui-tab-item" href="#tabbar-with-chat">
-				<span class="mui-icon kfl chanp"></span>
-				<span class="mui-tab-label">产品服务</span>
-			</a>
-			<a class="mui-tab-item" href="#tabbar-with-contact">
-				<span class="mui-icon kfl jishu"></span>
-				<span class="mui-tab-label">技术支持</span>
-			</a>
-			<a class="mui-tab-item" href="#tabbar-with-map">
-				<span class="mui-icon kfl uswm"></span>
-				<span class="mui-tab-label">关于我们</span>
-			</a>
-		</nav>
 		<!-- 内容详情 -->
 		<div class="mui-content">
 			<!--顶部banner背景-->
@@ -55,22 +38,33 @@
 			</div>
 
 			<div class="inline-row">
-				<h3><i class="kfl jiag1"></i> 核心技术</h3>
-			 	<div class="show-img">
-			 		
-			 	</div>
+				<div class="leftimg anm fadeIn"><img src="/static/img/andunimg1.png"/></div>
+				<div class="rightext">
+					<h1 class="anm fadeInRight">支持Windows/Linux样本的半自动化分析</h1><br>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.3s;"><i class="kfl checkbox1"></i>  数据综合查询功能</h4>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.6s;"><i class="kfl checkbox1"></i>  用户轨迹绘制功能</h4>
+				</div>
+			</div>
+
+			<div class="inline-row" style="background: #144861;">
+				<div class="gntext yellow">
+					<h1 class="anm fadeInLeft" style="color:#FFF;">支持Android样本的全自动化分析</h1><br>
+		 			<h4 class="anm fadeInLeft" style="animation-delay: 0.3s;"><i class="kfl checkbox1"></i>  针对ASCii/Unicode/UTF8/16等多种编码格式的字符信息</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 0.6s;"><i class="kfl checkbox1"></i>  针对中文、英文提供“敏感信息定义库”，这套库可以智能识别存在APT举证风险的内容</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 0.9s;"><i class="kfl checkbox1"></i>  获取指定时间范围指定区域的所有用户位置信息</h4>
+					<h4 class="anm fadeInLeft" style="animation-delay: 1.2s;"><i class="kfl checkbox1"></i>  在模拟环境下（自主研制的Vbody-Environment沙盒环境）提取样本执行所产生的驻留文件和注册表操作信息以及系统调用所产生的log信息</h4>
+				</div>
+				<div class="gnimg anm fadeIn">
+					<img src="/static/img/andunimg2.png"/>
+				</div>
 			</div>
 
 			<div class="inline-row">
-				<h3><i class="kfl jiag1"></i> 应用领域</h3>
-			 	<div class="show-img">
-			 		
-			 	</div>
-			</div>
-
-			<div class="inline-row">
-			 	<h3><i class="kfl tese"></i> 系统特色</h3>
-			 	
+				<div class="leftimg anm fadeIn"><img src="/static/img/andunimg3.png"/></div>
+				<div class="rightext">
+					<h1 class="anm fadeInRight">支持通信内容分析</h1><br>
+					<h4 class="anm fadeInRight" style="animation-delay: 0.3s;"><i class="kfl checkbox1"></i>  针对目标样本的“TCP、UDP、ICMP、HTTP”等协议，进行捕获分析；对相关通信内容进行还原，包括SHELL执行、管道通信、文件传输等进行识别，帮助用户确定合适的战术工具和技术手段</h4>
+				</div>
 			</div>
 
 			<!-- 引用底部组件 -->

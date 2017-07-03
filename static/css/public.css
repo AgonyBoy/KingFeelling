@@ -38,6 +38,7 @@
 .jishu:before{content:"\e605";}
 .ziyuan:before{content:"\e704";}
 .jingyan:before{content:"\e600";}
+.yzsm:before{content:"\e69d";color:#347EF2;}
 
 .jianjie:before{content:"\e644";}
 .bangong:before{content:"\e6ce";}
@@ -65,10 +66,12 @@
 .jinrong:before{content:"\e64b";}
 .hexin:before{content:"\e603";}
 
-.kuozhan:before{content:"\e7f9";}
-.chuli:before{content:"\e6e5";}
-.fywu:before{content:"\e71a";}
-.jiekou:before{content:"\e6b4";}
+.kuozhan:before{content:"\e7f9";color:#BDCA48;}
+.chuli:before{content:"\e6e5";color:#E5862E;}
+.fywu:before{content:"\e71a";color:#1F90C6;}
+.jiekou:before{content:"\e6b4";color:#808080;}
+
+.top0:before{content:"\e616";}
 
 /*滚动条样式*/
 ::-webkit-scrollbar{
@@ -112,10 +115,10 @@ ul,li,ol,dl,dd{list-style-type: none;padding:0;}
 
 div.companyLogo{
 	float:left;
-	width:150px;
+	width:180px;
 	height:70px;
     display: inline-block;
-    background:url("/static/img/logoActive.png") no-repeat scroll 0 50%/100% auto;
+    background:url("/static/img/logoActive.png?__inline") no-repeat scroll 0 50%/100% auto;
 }
 /*@media( max-width: 480px){
 	div.companyLogo{
@@ -124,7 +127,7 @@ div.companyLogo{
 		display: block;
 	}
 }*/
-.mui-active > div.companyLogo{background:url("/static/img/logo.png") no-repeat scroll 0 50%/100% auto; }
+.mui-active > div.companyLogo{background:url("/static/img/logo.png?__inline") no-repeat scroll 0 50%/100% auto; }
 ul.menu{float:right;padding:0;margin:0;}
 ul.menu > li.site-menu{
 	float:left;
@@ -192,6 +195,21 @@ div.copy-row{
 	background:#111a21;
 }
 
+a.nextop{
+	width:50px;
+	height: 50px;
+	background: rgba(0,0,0,0.6);
+	display: block;
+	position: fixed;
+	bottom:10px;
+	z-index: 999;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+	color:#FFF;
+	right:10px;
+	font-size: 30px;
+}
 /*手机导航菜单*/
 .mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{font-size: 16px;}
 .mui-bar-tab .mui-tab-item .mui-icon{top:0;}
@@ -201,3 +219,25 @@ nav.mui-bar{display: none;background-color: #1f1f1f;}
 	nav.mui-bar{display: block;}
 	.mui-slider-indicator{bottom:80px;}
 }
+
+nav.mui-bar-tab ul{
+	position:fixed;
+	bottom:70px;
+	left:0;
+	width:100%;
+	z-index: 999;
+	background:rgba(255,255,255,0.95);
+	margin: 0;
+	display: none;
+}
+.mui-bar-tab .mui-tab-item.mui-active:before{content:"";position: fixed;width:100%;height:100%;background: rgba(0,0,0,0.6);z-index: -1;bottom: 0;left:0;}
+.mui-bar-tab .mui-tab-item.mui-active > ul{display: inline-block;}
+nav.mui-bar-tab ul > li{
+	padding-left:20px;
+	text-align:left;
+	height: 50px;
+	border-top:1px solid #eee;
+	line-height: 50px;
+}
+nav.mui-bar-tab ul > li a{color:#000;display: block}
+nav.mui-bar-tab ul > li a:before{content:"》 ";color:gray;}
