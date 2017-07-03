@@ -32,7 +32,7 @@
 		  optimizer: fis.plugin('png-compressor')
 		});
 
-fis.match({
+/*fis.match('/static/css/*.css',{
 	deploy:[
 		fis.plugin('release',{
 			from:'/static/css/',
@@ -40,4 +40,9 @@ fis.match({
 		}),
 		fis.plugin('local-deliver')
 	]
+});
+*/
+/*排除不用发布的文件*/
+fis.match('*.md',{
+	release:false
 });
